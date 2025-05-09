@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 
 
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-black-500 text-white p-4">
+      <div className="bg-red-500 text-white p-4">
         Tailwind is working!
       </div>
 
