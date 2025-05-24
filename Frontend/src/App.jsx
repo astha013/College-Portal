@@ -1,16 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
-
-
+import HeaderHeroSection from './components/Header'
+import Footer from './components/Footer'
+import InternshipSection from './pages/Internship'
 function App() {
   
 
   return (
     <>
-      <div className="bg-red-500 text-white p-4">
-        Tailwind is working!
-      </div>
-
+      <HeaderHeroSection />
+      <InternshipSection />
+      <Footer />
         
     </>
   )
