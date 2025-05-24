@@ -34,7 +34,7 @@ const HeaderHeroSection = () => {
       {/* Navigation Bar */}
       <nav className="bg-[#0f3e45] text-white">
         <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-around text-sm md:text-base">
-          {["Home", "About Us", "Departments", "Admission", "Academics", "Examination", "Student Life", "Faculty", "Placement", "Contact us"].map((item, idx) => (
+          {["Home", "About Us", "Departments", "Admission", "Academics", "Examination", "Student Life", "Faculty", "Internship" ,"Placement", "Contact us"].map((item, idx) => (
             <div key={idx} className="cursor-pointer hover:underline">
               {item}
             </div>
@@ -48,9 +48,9 @@ const HeaderHeroSection = () => {
         style={{ backgroundImage: "url('/hero-background.jpg')" }}
       >
         <div className="w-full text-center pb-10">
-          <h1 className="text-white text-3xl font-bold">FACULTY _PROFILE</h1>
+          <h1 className="text-white text-3xl font-bold">INTERNSHIP</h1>
           <div className="mt-3 inline-block bg-[#0f3e45] px-4 py-1 text-white text-sm rounded">
-            Home &nbsp; &gt; &nbsp; Faculty_Profile
+            Home &nbsp; &gt; &nbsp; Internship
           </div>
         </div>
       </div>
