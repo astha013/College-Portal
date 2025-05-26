@@ -45,7 +45,7 @@ const HeaderHeroSection = () => {
       {/* Hero Section */}
       <div
         className="relative h-[200px] bg-cover bg-center flex items-end"
-        style={{ backgroundImage: "url('/hero-background.jpg')" }}
+        style={{ backgroundImage: "url('/internship hero.jpeg')" }}
       >
         <div className="w-full text-center pb-10">
           <h1 className="text-white text-3xl font-bold">INTERNSHIP</h1>
