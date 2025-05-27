@@ -16,7 +16,7 @@ app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
 
-app.use("/api/internships", internshipRoutes);
+app.use("/api/internship", internshipRoutes);
 
 
 const PORT = process.env.PORT || 5000;
