@@ -40,9 +40,6 @@ const ApplyFormModal = ({ internshipData, onClose }) => {
       console.error("Error submitting form:", error);
       alert("Error submitting the form.");
     }
-    console.log("Internship Data in Modal:", internshipData);
-    console.log("Link:", internshipData?.["Link "]?.trim()); // or internshipData?.link
-
   };
 
   return (
@@ -74,22 +71,37 @@ const ApplyFormModal = ({ internshipData, onClose }) => {
             className="w-full border border-gray-300 rounded px-4 py-2"
             required
           />
-          <input
-            type="text"
-            placeholder="Branch"
+
+          {/* Dropdown for Branch */}
+          <select
             value={branch}
             onChange={(e) => setBranch(e.target.value)}
             className="w-full border border-gray-300 rounded px-4 py-2"
             required
-          />
-          <input
-            type="text"
-            placeholder="Semester"
+          >
+            <option value="" disabled>Select Branch</option>
+            <option value="Computer Science">Computer Science Engineering</option>
+            <option value="Information Technology">Information Technology Engineering</option>
+            <option value="Mechanical">Mechanical Engineering</option>
+            <option value="Civil">Civil Engineering</option>
+            <option value="Electronics and Communication">Electronics and Communication Engineering</option>
+            <option value="Electrical">Electrical Engineering</option>
+            <option value="Automobile">Automobile Engineering</option>
+            <option value="Petrochemical">Petrochemical Engineering</option>
+          </select>
+
+          {/* Dropdown for Semester */}
+          <select
             value={semester}
             onChange={(e) => setSemester(e.target.value)}
             className="w-full border border-gray-300 rounded px-4 py-2"
             required
-          />
+          >
+            <option value="" disabled>Select Semester</option>
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+              <option key={sem} value={sem}>{sem}</option>
+            ))}
+          </select>
 
           <div className="flex justify-between items-center mt-4">
             <button
@@ -108,14 +120,14 @@ const ApplyFormModal = ({ internshipData, onClose }) => {
           </div>
         </form>
 
-        {showFinalButton && (
+        {showFinalButton && internshipData?.link && (
           <div className="mt-4 text-center">
             <a
               href={internshipData.link}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="mt-2 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800">
+              <button className="mt-2 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
                 Apply Now
               </button>
             </a>

@@ -49,6 +49,17 @@ const InternshipSection = () => {
             </>
           ) : null}
         </div>
+        <div className="text-center mt-8">
+          <a
+            href="https://internship.aicte-india.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded">
+              More Internships
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
