@@ -3,7 +3,6 @@ import { useState } from 'react'
 import HeaderHeroSection from './components/Header'
 import Footer from './components/Footer'
 import InternshipSection from './pages/Internship'
-import AddInternship from './pages/AddInternship'
 function App() {
   
 
@@ -11,7 +10,6 @@ function App() {
     <>
       <HeaderHeroSection />
       <InternshipSection />
-      <AddInternship />
       <Footer />
         
     </>
